@@ -46,10 +46,6 @@ class Market {
                     if(stock[i].quantity < amount) {
                         cout << "Stock not enough" << endl;
                         return;
-                    }
-                    else if(stock[i].quantity == 0) {
-                        cout << "Stock empty" << endl;
-                        return;
                     } else{
                         stock[i].quantity - amount;
                         cout << stock[i].name << " has been sell: " << amount << endl
